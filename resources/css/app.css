@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================================
+   GAMESHOP – Premium Gaming UI System
+   =================================================== */
+
+/* Glass panel effect — NOT inside @layer so Tailwind won't purge it */
+.glass {
+    background: rgba(5, 5, 16, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Neon text glow */
+.neon-text {
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.8),
+                 0 0 30px rgba(99, 102, 241, 0.4),
+                 0 0 60px rgba(99, 102, 241, 0.15);
+}
+
+/* Indigo glow shadow */
+.glow-indigo {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+/* ===================================================
+   KEYFRAME ANIMATIONS
+   =================================================== */
+
+/* Floating orb animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%      { transform: translateY(-12px); }
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Pulsing glow effect */
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(99, 102, 241, 0.3); }
+    50%      { box-shadow: 0 0 40px rgba(139, 92, 246, 0.7); }
+}
+.animate-pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Background gradient sweep */
+@keyframes gradientBG {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Staggered fade-in-up entrance */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+}
+
+/* Animation delays for staggering */
+.anim-delay-1 { animation-delay: 100ms; }
+.anim-delay-2 { animation-delay: 200ms; }
+.anim-delay-3 { animation-delay: 300ms; }
+.anim-delay-4 { animation-delay: 400ms; }
+.anim-delay-5 { animation-delay: 500ms; }
