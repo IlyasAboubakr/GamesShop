@@ -2,6 +2,32 @@
 
 A production-quality digital video game key e-commerce platform built with Laravel. This project includes secure authentication, game management, a shopping cart, checkout simulation, and an admin dashboard.
 
+## 📸 Screenshots
+
+### 🏠 Store Homepage
+![Store Homepage](screenshots/01_store_homepage.png)
+
+### 🔐 Authentication
+| Login | Register |
+|-------|----------|
+| ![Login](screenshots/02_login.png) | ![Register](screenshots/03_register.png) |
+
+### 🛒 Client Storefront
+| Browse Games | Shopping Cart | My Account / Orders |
+|---|---|---|
+| ![Store Browsing](screenshots/08_store_browsing.png) | ![Cart](screenshots/09_cart.png) | ![My Orders](screenshots/10_my_orders.png) |
+
+### 🛡️ Admin Panel
+| Dashboard | Games Management |
+|---|---|
+| ![Admin Dashboard](screenshots/04_admin_dashboard.png) | ![Admin Games](screenshots/05_admin_games.png) |
+
+| Categories | Users |
+|---|---|
+| ![Admin Categories](screenshots/06_admin_categories.png) | ![Admin Users](screenshots/07_admin_users.png) |
+
+---
+
 ## 🚀 Prerequisites
 
 Before you begin, ensure you have the following installed on your new PC:
